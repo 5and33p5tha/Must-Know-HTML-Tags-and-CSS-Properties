@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+
+form{
+    background-color: darkcyan;
+    width: 500px;
+    border: darkslategrey ridge 5px;                /*Can Use Groove for 3D Effects, Ridge Makes it look like a frame*/
+    padding: 10px;
+    border-radius: 15px;                              /*To make the corners round*/
+    /* box-shadow: 15px 15px 15px greenyellow,          FOR OUTSIDE SHADOW ONLY */
+    box-shadow: 15px 15px 15px greenyellow, inset 0px 0px 15px lightskyblue;         /*Horizontal Direction, Vertical Direction, Opacity, Color   The Values can be negative aswell */
+    /* The Inset Makes the shadow appear inside. Use 0px for outer values to make the box glow */
+    margin: auto;                       /*Auto defines left and right margins equally so the whole div appears to be in center*/
+
+                                        /*JUSTIFY-CONTENT AND ALIGN-CONTENTS ONLY WORKS FOR CONTENTS I.E. LIKE HOW PADDING WORKS, NOT ON THE DIV ITSELF*/
+
+}
+
+
+/* Label, button{ */
+    Label {
+    font-family: cursive;
+    margin-top: 15px;
+    /* display: block; */
+    width: 250px;
+    display: inline-block;                  /*FOR Media Query*/
+
+}
+
+
+.other_label{
+    display: inline;
+}
+
+
+input[type= 'text'], input[type= 'email'], input[type= 'password'], input[type= 'date'], input[type= 'number'], textarea, select{
+    border-radius: 5px;
+    width: 100%;
+    background-color: maroon;
+    font-family: cursive;
+    padding-left: 5px;
+    display: block;
+}
+
+
+
+
+
+    /* TRYING FOR MAX WIDTH */
+
+
+
+
+    
+    /* @media screen and (max-width:500px){ */
+
+    /* form{ */
+        /* background-color:aquamarine ;
+        width: 100%;
+        border: darkslategrey ridge 5px;                /*Can Use Groove for 3D Effects, Ridge Makes it look like a frame*/
+        /* padding: 10px; */
+        /* border-radius: 15px;                              To make the corners round */
+        /* box-shadow: 15px 15px 15px greenyellow, inset 0px 0px 15px lightskyblue;         Horizontal Direction, Vertical Direction, Opacity, Color   The Values can be negative aswell */
+        /* The Inset Makes the shadow appear inside. Use 0px for outer values to make the box glow */
+    /* } */
+
+
+    /* input[type= 'text'], input[type= 'email'], input[type= 'password'], input[type= 'date'], input[type= 'number'], textarea, select{ */
+        /* border-radius: 5px; */
+        /* width: 100%; */
+        /* background-color: maroon; */
+        /* font-family: cursive; */
+        /* padding-left: 5px; */
+        /* display: inline-block; */
+    /* }    */
+    
+/* } */
+
+
+
+
+
+/* @media screen and (min-width:500px){
+
+    form{
+        background-color:aquamarine ;
+        width: 100%;
+        border: darkslategrey ridge 5px;                /*Can Use Groove for 3D Effects, Ridge Makes it look like a frame*/
+        /* padding: 10px; */
+        /* border-radius: 15px;                              To make the corners round */
+        /* box-shadow: 15px 15px 15px greenyellow, inset 0px 0px 15px lightskyblue;         Horizontal Direction, Vertical Direction, Opacity, Color   The Values can be negative aswell */
+        /* The Inset Makes the shadow appear inside. Use 0px for outer values to make the box glow */
+    /* } */
+
+
+    /* input[type= 'text'], input[type= 'email'], input[type= 'password'], input[type= 'date'], input[type= 'number'], textarea, select{ */
+        /* border-radius: 5px; */
+        /* width: 300px; */
+        /* background-color: maroon; */
+        /* font-family: cursive; */
+        /* padding-left: 5px; */
+        /* display: inline-block; */
+    /* }    */
+
+/* } */
+
+
+@media screen and (max-width:600px){
+  
+    form{
+        width: 100%;
+        background-color: aquamarine;
+    }
+
+
+    input[type= 'text'], input[type= 'email'], input[type= 'password'], input[type= 'date'], input[type= 'number'], textarea, select, label{
+        width: 100%;
+        display: inline-block;
+    }
+}

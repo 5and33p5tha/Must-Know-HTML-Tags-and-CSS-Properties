@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Animations</title>
+
+
+    <style>
+        .div1 {
+            height: 500px;
+            width: 500px;
+            /* background-color: aquamarine; */
+            background-image: linear-gradient(lime 10%, aquamarine 15%, darkcyan 40%, darkblue 60%);
+            /*Upto 10% Aqua, then for 15% lime and so on*/
+            /* background-image: repeating-linear-gradient(aquamarine 10%, lime 15%, darkcyan 40%, darkblue 60%);       The Linear Gradient gets Repeated*/
+
+
+            /* Animations */
+
+
+            /* Translate */
+
+
+            /* transform: translate(20px, 30px);    recenters 20px for positive x-axis and 30px for negative y-axis i.e the div moves */
+            /* transform: translate(-20px,-30px); */
+
+            /* transform: translateX(20px); */
+            /* transform: translateY(30px);            Here only the transform of y-axis is active and transform of x-axis is left out. */
+
+
+            /* Rotate */
+
+
+            /* transform: rotate(30deg, 30deg); */
+            /* transform: rotate3d(30deg, 30deg, 30deg); */
+            /* transform: rotate(30deg);                       Takes Rotate Z */
+            /* transform: rotateX(30deg); */
+            /* transform: rotateY(30deg); */
+            /* transform: rotateZ(30deg); */
+
+
+
+            /*transform: rotate(-30deg -30deg);        We Cannot Define it like THIS */
+
+            /* transform: rotateX(-30deg) rotateY(-30deg); */
+
+
+
+            /* Skew */
+
+
+            /* transform: skewX(15deg); */
+            /* transform: skewY(15deg); */
+            /* transform: skew(15deg, 15deg); */
+
+
+
+            transform: translate(20px) rotateY(30deg) skewX(15deg);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="div1">
+
+    </div>
+
+
+</body>
+
+</html>

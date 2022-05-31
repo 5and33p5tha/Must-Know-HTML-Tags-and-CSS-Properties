@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.banner{
+    width: 25%;
+    background-color: burlywood;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.menubar{
+    width: 75%;
+    background-color: cadetblue;
+    float: right;
+}
+
+.banner a{
+text-decoration: none;
+color: yellow;
+cursor: pointer ;
+}
+
+.sidebar a, .menubar a{
+    text-decoration: none;
+    color: yellow;
+}
+
+
+.sidebar ul, .menubar ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sidebar ul{
+    flex-direction: column;
+}
+
+
+.menubar li, .sidebar li{
+    list-style: none;
+    /* display: inline-block; */
+    /* padding-left: 50px; */
+    margin-top: 15px;
+    /* padding-top: 15px; */
+    font-size: 18px;
+    position: relative;
+}
+
+.menubar li:hover, .sidebar li:hover{
+background-color: blue;
+}
+
+.dropdown{
+    color: yellow;
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+    background-color: turquoise;
+    top: 60%;
+    left: 0%;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    padding: 0;
+    width: 100px;
+    text-align: center;
+}
+.dropdown li{
+    /* height: 25px; */
+}
+ .menubar li:hover .dropdown{
+     visibility: visible;
+ }
+ .subdropdown{
+    color: yellow;
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgb(10, 124, 113);
+    top: 0%;
+    left: 100%;
+    padding-left: 10px;
+    width: 100px;
+ }
+ .dropdown li:hover .subdropdown{
+     visibility: visible;
+ }
+
+.body-content{
+    /* position: static; */
+    margin-top: 50px;
+    /* height:900px; */
+    background-color: burlywood;
+    display: flex;
+    align-items: stretch;
+}
+.sidebar{
+    background-color:cyan;
+    width: 25%;
+    /* height: 900px; */
+}
+.sidebar2{
+    display: none;
+}
+.main-content{
+    background-color: darkcyan;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.card{
+    height: 300px;
+    width: 300px;
+    background-color: darkgoldenrod;
+    border-radius: 15px;
+}
+
+.img-container{
+    width: 300px;
+    height: 200px;
+    background-color: darkgray;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    
+}
+.img-container img:hover{
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+.card-title{
+    text-align: center;
+    font-weight:bolder;
+    font-size: 24px;
+    font-variant: small-caps;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card-desc{
+    text-align: justify;
+
+}
+ .card-button{
+     text-align: center;
+     color: darkkhaki;
+     background-color: darkolivegreen;
+ }
+
+ .custom-icons{
+     font-size: 48px;
+     color: blue;
+     background-color: chartreuse;
+ }
+ footer{
+     height: 100px;
+ }
+
+
+ @media screen and (max-width:600px) {
+     .header{
+         flex-direction: column;
+     }
+     .banner{
+         width: 100%;
+     }
+     .menubar{
+         width: 100%;
+         display: none;
+     }
+     .sidebar{
+         /* width: 100%; */
+         display: none;
+     }
+     .body-content{
+        flex-direction: column;
+     }
+     .main-content{
+        width: 100%;
+     }
+     .sidebar2{
+         display: block;
+         
+     }
+     .sidebar2 select{
+         width: 100%;
+         height: 50px;
+         text-align: center;
+         font-size: 24px;
+         background-color: aquamarine;
+
+     }
+     
+ }

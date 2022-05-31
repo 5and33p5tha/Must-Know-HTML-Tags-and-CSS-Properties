@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Query</title>
+
+
+    <style>
+        .div1 {
+
+
+            /* FOR MEDIA QUERY, WE ALWAYS DEFINE FOR MOBILES FIRST. THIS IS THE CURRENT STANDARD. */
+
+            background-color: aquamarine;
+            width: 100%;
+            /*  WIDTH IN PERCENTAGE FOR MAKING IT A CONSTANT FOR ALL SIZES*/
+            height: 400px;
+            transition: all 2s;
+            /*IF TRANSITION IS NOT DEFINED HERE AND ONLY BOTTOM, WHEN IT REACHES 600 PX THERE IS SMOOTH EFFECT BUT MOVING BACK HAS NO EFFECT*/
+        }
+
+
+        @media screen and (min-width:600px) {
+            .div1 {
+                background-color: darkslategrey;
+                /* width: 100%;
+                height: 400px; */
+                /* We Only use separete width and height if we want to change it. OR ELSE, THE ORIGINAL DIV VALUE REMAINS*/
+                /* transition: 2s; */
+                /*NO NEED TO USE TRANSITION AGAIN AS TRANSITION ALL DEFINES FOR ALL*/
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="div1"></div>
+
+</body>
+
+</html>

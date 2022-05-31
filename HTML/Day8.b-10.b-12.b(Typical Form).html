@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typical Form</title>
+
+
+    <link rel="stylesheet" href="../CSS/Day8.b-10.b-12.bStyleSheet.css">
+
+
+</head>
+
+<body>
+    SIGN UP FORM
+    <form>
+        <!-- Not Necessary when we use border in CSS <fieldset> -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" size="50" placeholder="First Name Here">
+        <!-- the label for value and id name should be same as when we click the term in label, it directly links us to that field i.e
+            when we click on first name, the blinker gets activated on First Name Border -->
+
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" size="50.9" placeholder="last Name Here">
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" size="50" placeholder="Email Here">
+
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" size="50" placeholder="Password Here">
+
+
+        <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" placeholder="Phone Number Here">
+
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" size="50">
+
+
+        <label for="Gender" class="other_label">Gender:</label>
+        <input type="radio" id="male" name="gender"> <label for="male" class="other_label">Male</label>
+        <input type="radio" id="female" name="gender"> <label for="female" class="other_label">Female</label>
+        <input type="radio" id="other" name="gender"> <label for="other" class="other_label">Other</label>
+        <br>
+        <br>
+
+
+        <label for="hobby" class="other_label">Hobby/Interest:</label>
+        <input type="checkbox" id="travel" name="hobby"><label for="travel" class="other_label">Travelling</label>
+        <input type="checkbox" id="read" name="hobby"><label for="read" class="other_label">Reading Books</label>
+        <input type="checkbox" id="music" name="hobby"><label for="music" class="other_label">Listening Music</label>
+        <input type="checkbox" id="movie" name="hobby"><label for="movie" class="other_label">Watching Movies</label>
+        <input type="checkbox" id="sports" name="hobby"><label for="sports" class="other_label">Sports</label>
+
+
+        <label for="add">Address:</label>
+        <select name="add" id="add">
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Kathmandu">Lalitpur</option>
+            <option value="Kathmandu">Bhaktapur</option>
+            <option value="Kathmandu">Pokhara</option>
+            <option value="Kathmandu">Biratnagar</option>
+
+
+            <label for="about">About Yourself:</label>
+            <textarea name="" id="about" cols="50" rows="5"> </textarea>
+            <!--Cols Defined Height and Rows Define Width  -->
+
+
+            <button>Reset</button>
+
+
+            <input type="submit">
+            <input type="reset">
+            <!-- </fieldset> -->
+    </form>
+
+</body>
+
+</html>

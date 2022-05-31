@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+form {
+  margin: auto;
+  background-color: darkgray;
+  width: 700px;
+  border: 5px ridge brown;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px black;
+}
+
+label,
+button {
+  font-family: cursive;
+  margin-top: 15px;
+  display: inline-block;
+  width: 250px;
+  /* display: block; */
+}
+
+.other_label {
+  display: inline;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+textarea,
+select {
+  border-radius: 5px;
+  width: 400px;
+  background-color: violet;
+  font-family: cursive;
+  padding-left: 5px;
+  /* display: block; */
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    /* background-color: darkgray; */
+    width: 100%;
+    /* border: 5px ridge brown; */
+    /* padding: 10px; */
+    /* border-radius: 15px; */
+    /* box-shadow: 0px 0px 15px black; */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="number"],
+  textarea,
+  select,
+  label {
+    width: 100%;
+    display: inline-block;
+  }
+}

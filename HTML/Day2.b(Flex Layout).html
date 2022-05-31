@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+
+    <Style>
+        .container {
+            /* height: 600px;*/
+            height: 1vh;
+            width: 100%;
+            /* background-color:indianred; */
+            /*Already Defined For Below Media Query UPTO 800PX*/
+            display: flex;
+            flex-wrap: wrap;
+            /*justify-content: flex-start;    Horizontal
+            align-content: space-between;     Vertical
+            */
+            justify-content: space-evenly;
+            align-content: space-evenly;
+        }
+
+        .item1 {
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            background-color: darkcyan;
+        }
+
+
+
+        /* THIS DEFINES UPTO 600PX*/
+
+        @media screen and (max-width:600px) {
+
+            .container {
+                height: 1500px;
+                flex-direction: column;
+                background-color: darkviolet;
+            }
+
+        }
+
+
+
+        /* THIS DEFINES AFTER 600PX UPTO NEXT DEFINED VALUE THAT IS 800PX*/
+
+        @media screen and (min-width:600px) {
+
+            .container {
+                height: 800px;
+                flex-direction: column;
+                background-color: deeppink;
+            }
+
+        }
+
+        /* THIS DEFINES ALL VALUES AFTER 800PX*/
+
+        @media screen and (min-width:800px) {
+
+            .container {
+                height: 600px;
+                flex-direction: column;
+                background-color: lawngreen;
+            }
+
+        }
+    </Style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+    </div>
+</body>
+
+</html>

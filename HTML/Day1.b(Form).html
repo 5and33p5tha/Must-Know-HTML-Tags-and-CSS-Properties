@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <link rel="stylesheet" href="../CSS/Day1.b.css" />
+  </head>
+  <body>
+    SIGN UP FORM
+    <form>
+      <label for="fname">First Name:</label>
+      <input type="text" placeholder="first name here" id="fname" /><br />
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" /><br />
+
+      <label for="phone">Phone Number:</label>
+      <input type="number" id="phone" /><br /><br />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" /><br /><br />
+
+      <label>Gender</label>
+      <input type="radio" id="male" name="gender" /><label
+        class="other_label"
+        for="male"
+        >Male</label
+      >
+      <input type="radio" id="female" name="gender" /><label
+        class="other_label"
+        for="female"
+        >Female</label
+      >
+      <input type="radio" id="other" name="gender" /><label
+        class="other_label"
+        for="other"
+        >Other</label
+      >
+      <br /><br />
+
+      <label>Hobby/Interests:</label>
+      <input type="checkbox" id="travel" name="hobby" /><label
+        class="other_label"
+        for="travel"
+        >Travelling</label
+      >
+      <input type="checkbox" id="read" name="hobby" /><label
+        class="other_label"
+        for="read"
+        >Reading Books</label
+      >
+      <input type="checkbox" id="music" name="hobby" /><label
+        class="other_label"
+        for="music"
+        >Listening Music</label
+      >
+      <br /><input
+        type="checkbox"
+        id="movie"
+        name="hobby"
+        style="margin-left: 250px"
+      /><label class="other_label" for="movie">Watching Movies</label>
+      <input type="checkbox" id="sports" name="hobby" /><label
+        class="other_label"
+        for="sports"
+        >Sports</label
+      >
+      <br /><br />
+
+      <label for="add">Address:</label>
+      <select name="address" id="add">
+        <option>Kathmandu</option>
+        <option>Bhaktapur</option>
+        <option>Lalitpur</option>
+        <option>Pokhara</option>
+        <option>Biratnagar</option>
+      </select>
+      <br /><br />
+
+      <label for="about">About Yourself:</label>
+      <textarea name="" id="about" cols="50" rows="5"></textarea>
+
+      <br />
+      <button>Reset</button>
+
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+        }
+
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            gap: 5px;
+            grid-template-rows: 50px 50px 100px 250px 150px 50px 50px 50px
+        }
+
+
+        .one {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            /*Grid Starts at 1 and Spans upto end.*/
+            /* THERE ARE 5 COLUMNS, 1 IS THE START POINT AND 6 IS THE END POINT AS IN NODE IN ELECTRONICS IN NODE ANALYSIS */
+            grid-row: 1;
+            background-color: tomato;
+            text-align: center;
+            color: mediumblue;
+        }
+
+
+        .two {
+            grid-column: 1;
+            /*THE WIDTH OF DIV TWO IS JUST ONE COLUMNS WIDE I.E 20% ONLY*/
+            grid-row: 2/ 8;
+            background-color: turquoise;
+            text-align: center;
+            color: maroon;
+        }
+
+
+        .three {
+            grid-column: 2;
+            grid-row: 5;
+            background-color: yellowgreen;
+            text-align: center;
+            color: darkgreen;
+        }
+
+
+        .four {
+            grid-column: 3;
+            grid-row: 3;
+            background-color: midnightblue;
+            text-align: center;
+            color: aqua;
+        }
+
+
+        .five {
+            grid-column: 4;
+            grid-row: 4;
+            background-color: maroon;
+            text-align: center;
+            color: turquoise;
+        }
+
+
+        .six {
+            grid-column: 3;
+            grid-row: 4;
+            background-color: lightsteelblue;
+            text-align: center;
+            color: tomato;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="one">One</div>
+
+        <div class="two">Two</div>
+
+        <div class="three">Three</div>
+
+        <div class="four">Four</div>
+
+        <div class="five">Five</div>
+
+        <div class="six">Six</div>
+
+    </div>
+
+
+</body>
+
+</html>

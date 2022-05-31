@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Commerce Layout</title>
+
+    <link rel="stylesheet" href="../CSS/Day4-5-6-7-11-12StyleSheet.css">
+
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <!-- CDN = Content Delivery Network -->
+
+    <!-- Same in font awesome as in bootstrap -->
+
+
+</head>
+
+
+<body>
+
+    <!--Start of navigation bar-->
+    <div class="header">
+        <!--PREVIOUSLY WE USED HEADER ELEMENT AND NOT CLASS SO THE IMAGES WERE OVERLAPPING, USING CLASS=HEADER SOLVED THE CASE-->
+
+        <div class="banner"><a href="https://www.w3schools.com/css/css_grid.asp">My Online Store</a></div>
+
+        <div class="menubar">
+
+            <ul>
+
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="">Category</a>
+
+
+                    <!--Drop Down Starts Here-->
+                    <ul class="dropdown">
+
+
+                        <li>Mobile
+
+
+                            <!--subdropdown 1 Starts Here-->
+                            <ul class="subdropdown">
+
+
+                                <li>Apple</li>
+
+                                <li>Samsung</li>
+
+                                <li>Huawei</li>
+
+                                <li>Xiaomi</li>
+
+                                <li>Sony</li>
+
+                            </ul>
+
+                        </li>
+
+                        <!--subdropdown 1 Ends Here-->
+
+
+                        <li>Laptops
+
+                            <!--subdropdown 2 Starts Here-->
+                            <ul class="subdropdown">
+
+
+                                <li>Macs</li>
+
+                                <li>Dell</li>
+
+                                <li>HP</li>
+
+                                <li>Asus</li>
+
+                                <li>MSI</li>
+
+                            </ul>
+
+                        </li>
+
+                        <!--subdropdown 2 Ends Here-->
+
+                        <li>Beauty</li>
+
+                        <li>Health</li>
+
+                        <li>Accessories</li>
+                    </ul>
+
+                </li>
+                <!--Drop Down Endss Here-->
+
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Cart</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+    <!--End of navigation bar-->
+
+
+
+
+
+
+
+    <!--Start of body content-->
+    <div class="body-content">
+
+
+        <!-- SECONDARY SIDEBAR STARTS HERE WHICH IS HIDDEN FIRST BUT ONLY APPEARS LATER -->
+        <div class="sidebar2">
+
+            <!-- 'id' PASSES THE 'value' IN 'name' -->
+            <!-- the 'id' 'name' etc are empty as this is just for FRONT END. WE USE THOSE LATER FOR BACK -->
+
+            <select name="" id="">
+                <option value="Home">Home</option>
+                <option value="Category">Category</option>
+                <option value="About">About</option>
+                <option value="Contact">Contact</option>
+                <option value="Cart">Cart</option>
+            </select>
+        </div>
+
+
+        <!-- THIS IS THE MAIN SIDEBAR -->
+        <div class="sidebar">
+
+            <ul>
+
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="">Category</a>
+
+
+                    <!--Drop Down Starts Here-->
+                    <ul class="dropdown">
+
+
+                        <li>Mobile
+
+
+                            <!--subdropdown 1 Starts Here-->
+                            <ul class="subdropdown">
+
+
+                                <li>Apple</li>
+
+                                <li>Samsung</li>
+
+                                <li>Huawei</li>
+
+                                <li>Xiaomi</li>
+
+                                <li>Sony</li>
+
+                            </ul>
+
+                        </li>
+
+                        <!--subdropdown 1 Ends Here-->
+
+
+                        <li>Laptops
+
+                            <!--subdropdown 2 Starts Here-->
+                            <ul class="subdropdown">
+
+
+                                <li>Macs</li>
+
+                                <li>Dell</li>
+
+                                <li>HP</li>
+
+                                <li>Asus</li>
+
+                                <li>MSI</li>
+
+                            </ul>
+
+                        </li>
+
+                        <!--subdropdown 2 Ends Here-->
+
+                        <li>Beauty</li>
+
+                        <li>Health</li>
+
+                        <li>Accessories</li>
+                    </ul>
+
+                </li>
+                <!--Drop Down Endss Here-->
+
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Cart</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="main-content">
+
+
+            <!--Start of Card 1-->
+            <div class="card">
+
+                <div class="img-container">
+                    <img src="../Images/Image3.jpeg" alt="Image1">
+                </div>
+
+
+                <div class="card-title">Title
+
+                </div>
+
+
+                <div class="card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio.
+                </div>
+
+                <div class="card-button-holder">
+                    <button class="card-button">Click Me</button>
+                </div>
+
+            </div>
+            <!--End of Card 1-->
+
+
+
+
+
+            <!--Start of Card 2-->
+            <div class="card">
+
+                <div class="img-container">
+                    <img src="../Images/Image3.jpeg" alt="Image1">
+                </div>
+
+
+                <div class="card-title">Title2
+
+                </div>
+
+
+                <div class="card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio.
+                </div>
+
+                <div class="card-button-holder">
+                    <button class="card-button">Click Me</button>
+                </div>
+
+            </div>
+            <!--End of Card 2-->
+
+
+
+
+
+            <!--Start of Card 3-->
+            <div class="card">
+
+                <div class="img-container">
+                    <img src="../Images/Image3.jpeg" alt="Image1">
+                </div>
+
+
+                <div class="card-title">Title
+
+                </div>
+
+
+                <div class="card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio.
+                </div>
+
+                <div class="card-button-holder">
+                    <button class="card-button">Click Me</button>
+                </div>
+
+            </div>
+            <!--End of Card 3-->
+
+
+
+
+
+            <!--Start of Card 4-->
+            <div class="card">
+
+                <div class="img-container">
+                    <img src="../Images/Image3.jpeg" alt="Image1">
+                </div>
+
+
+                <div class="card-title">Title
+
+                </div>
+
+
+                <div class="card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio.
+                </div>
+
+                <div class="card-button-holder">
+                    <button class="card-button">Click Me</button>
+                </div>
+
+            </div>
+            <!--End of Card 4-->
+
+
+
+
+
+            <!--Start of Card 5-->
+            <div class="card">
+
+                <div class="img-container">
+                    <img src="../Images/Image3.jpeg" alt="Image1">
+                </div>
+
+
+                <div class="card-title">Title
+
+                </div>
+
+
+                <div class="card-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio.
+                </div>
+
+                <div class="card-button-holder">
+                    <button class="card-button">Click Me</button>
+                </div>
+
+            </div>
+            <!--End of Card 5-->
+
+
+        </div>
+
+    </div>
+    <!--End of body content-->
+
+
+    <!--Start of footer-->
+    <footer>
+        &copy; 2021
+        <i class="bi bi-facebook custom-icons"></i>
+
+
+        <!-- for icons, better to use font awesome than to use bootstrap of other as it is more versatile and has more icons -->
+
+        <!---
+    &copy;  copy-right symbol   
+    &reg;   registered symbol
+    &lt;    less than symbol    
+    &gt;    greater than symbol
+
+
+        for icons:  
+        w3icons.com
+        Boxicon.com
+        bootstrap.com
+        fontawesome.com
+
+
+    -->
+
+
+    </footer>
+    <!--End of footer-->
+
+
+</body>
+
+</html>

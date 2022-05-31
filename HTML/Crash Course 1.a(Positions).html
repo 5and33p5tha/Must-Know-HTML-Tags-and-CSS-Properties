@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>positions</title>
+    <style>
+      .container {
+        height: 5000px;
+        width: 500px;
+        background-color: blue;
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+
+      .div1 {
+        height: 250px;
+        width: 300px;
+        background-color: brown;
+        /* position: relative;
+            right: 20px; */
+      }
+      .div2 {
+        height: 250px;
+        width: 300px;
+        background-color: green;
+        /* position relative to its normal position */
+        /* position: relative */
+
+        /* position absolute to its parent or html document */
+        /* position: absolute; */
+
+        /* position fixed to certain pixels in the document */
+        /* position: fixed; */
+
+        /*position stuck to certain pixels in the document */
+        position: sticky;
+        top: 20px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div1">division1</div>
+      <div class="div2">division2</div>
+    </div>
+    <!-- <div class="div1"></div> -->
+
+    <!-- <div class="container"></div> -->
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True Animations</title>
+
+
+    <style>
+        .div1 {
+            height: 500px;
+            width: 500px;
+            background-color: cornflowerblue;
+            position: relative;
+            /*To Make this the parent of div 2 so the position of div 2 will be relative to div1*/
+
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; The animation works in this manner*/
+
+
+            /* animation: example 5s ease 2s 3 alternate backwards; */
+            /* animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;   
+                                                        /* Alternate: From to To and To to From,  
+                                                        Alternate-reverse: To to From and From to To; */
+
+
+            /* animation-fill-mode:backwards;                   /*Defines what the end set is to be.
+                                                            Forwards sets the end of animation as standard. */
+            /* Backwards set the prior result of animation as end result after animation*/
+            */
+        }
+
+
+        /* @keyframes example{ */
+        /* This Defines all the work of animations named example*/
+
+        /* from{background-color: cornflowerblue;}
+            to{background-color: cyan;}
+            
+            from{transform:scaleX(2);}
+            to{transform:scaleY(3);} */
+
+        /* } */
+
+
+        .div2 {
+            height: 100px;
+            width: 200px;
+            background-color: darkseagreen;
+            animation: example-2 5s ease-out 1s Infinite alternate-reverse forwards;
+            position: absolute;
+        }
+
+
+        @keyframes example-2 {
+
+            0% {}
+
+
+            25% {
+                right: 0;
+                border-radius: 50%
+                    /*Border Radius in Percentage to make it more roundish*/
+            }
+
+
+            50% {
+                bottom: 0;
+                right: 0;
+            }
+
+
+            75% {
+                bottom: 0;
+                left: 0;
+                border-radius: 50%
+            }
+
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="div1">
+        <div class="div2"></div>
+    </div>
+
+</body>
+
+</html>

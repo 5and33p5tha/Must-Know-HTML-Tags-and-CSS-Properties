@@ -1,0 +1,304 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    /*Includes padding inside the width. Doesn't Let Anything Outside.*/
+}
+
+.header{
+    background-color: cadetblue;
+    color: darksalmon;
+    height: auto;
+    display: flex;
+    /* flex-wrap: wrap; */                  /* removed due to issue which was then SOLVED!   NOW AGAIN REMOVED FOR MEDIA QUERY STYLE SOLUTION*/
+    position: relative;
+}
+
+
+.banner{
+    width: 25%;
+    background-color:tomato;
+    padding: 20px; 
+    font-size: 30px;
+}
+
+
+.banner a{
+    text-decoration: none;
+    color:cornflowerblue;
+    cursor:not-allowed;
+}
+
+
+.menubar{
+    width: 75%;
+    background-color: steelblue;
+    float: right;
+}
+
+
+.menubar a, .sidebar a{
+    text-decoration: none;
+    color: firebrick;
+}
+
+
+.menubar ul, .sidebar ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.sidebar ul{
+    flex-direction: column;
+}
+
+
+.menubar li, .sidebar li{
+    list-style: none;
+
+    /*Can use flex in UL in place of <UL> in html IF WE USE INLINE BLOCK, PADDING AND MARGINS BESIDE TOP AND BOTTOM ARE MUST TO DEFINE SPACE*/
+    
+    /*display: inline-block;*/ 
+    padding: 0px 3px 0px 3px;
+    margin-top: 15px;
+    font-size: 18px;
+    position: relative; /* Parent Class for Dropdown, The position absolute is relative to this*/
+}
+
+
+.menubar li:hover, .sidebar li:hover{
+    background-color: greenyellow;
+}
+
+
+/*DAY 5 : DROPDOWN AND SUBDROPDOWN*/
+
+
+.dropdown{
+    color: cadetblue;
+    flex-direction: column;     /*Moves UL of Dropdown in Down Direction*/
+    position: absolute;         /*Only Moves The Dropdown of Dropdown class*/
+    background-color: cyan;
+    top: 60%;                  /* Defines Distance from top*/
+    left: 0%;
+    /*padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;*/
+    padding: 0%;
+    width: 120px;             /*If width is not defined, the box is of same width as largest text size*/
+    text-align: center;
+    visibility: hidden;
+    /*display: none;*/
+}
+
+
+.dropdown li{
+    /*height: 25px;*/
+
+}
+
+
+.subdropdown{
+    color: ghostwhite;
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+    background-color: darkcyan;
+    top: -120%;
+    left: 100%;
+    /*padding-left: 10px;*/
+    padding: 0%;
+    width: 120px;
+    text-align: center;
+}
+
+
+.dropdown li:hover .subdropdown{ /*Not css for multiple class. For multiple class we use comma */
+    visibility: visible;
+}
+
+
+.menubar li:hover .dropdown, .sidebar li:hover .dropdown{ /* Means the dropdown class of li:hover of menubar class  i.e    .menubar>>li:hover>>.dropdown */
+    visibility: visible;
+}
+
+
+.body-content{
+    margin-top: 5px;
+    height: auto;
+    background-color: darkcyan;
+    display: flex;
+    align-items: stretch;                   /*THIS STRETCHES THE DIV THAT HAS LESS HEIGHT TO MATCH THE DIV THAT HAS MAX HEIGHT AND MAKE IT EVEN*/
+}
+
+
+.sidebar2{
+    display: none;
+}
+
+
+.sidebar{
+    width: 25%;
+    height: auto;
+    background-color: goldenrod;
+}
+
+
+.sidebar li:hover .dropdown{
+    top: 53%;
+    left: 22.5%;
+    z-index: 1;                         /*z-index for layer management and hover issues*/
+
+                    /* Z-Index: Layer Management, Negative goes through layers, Positive values brings the layer to top. eg: z-inder: 3 brings the content 3 layers top */
+}
+
+
+.main-content{
+    
+    background-color: darkgrey;
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;            
+    /* align-content: space-between;                       ONLY WORKS IF HEIGHT IS GIVEN */
+}
+
+
+.card{
+    height: 300px;
+    width: 327.5px;
+    margin: 15px;
+    background-color: lightskyblue;
+    border-radius: 15px;                /*Borders ends are cut at a curve of given radius*/
+}
+
+
+.img-container{
+    width: 100%;                        /*Full WIdth Of Parent Div i.e Card's Width*/
+    height: 200px;
+    background-color: lightslategrey;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-container img:hover{
+    transform: scale(1.5);              /*0 is smallest, 1 is normal, Give value in decimals*/
+    transition: 2s;
+}
+
+
+.card-title{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 27px;
+    font-variant: small-caps;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+
+.card-desc{
+    text-align: justify;            /*The Text are stretched to fit*/
+}
+
+
+.card-button-holder{
+    width: 25%;
+    margin: auto;
+}
+
+
+.card-button{
+    text-align: center;
+    color:powderblue;
+    background-color: navy;
+}
+
+
+footer{         
+    /* footer is an element and not a class, Hence the we dont use . footer to define the footer css */
+    margin-top: 5px;
+    background-color: cornflowerblue;
+    text-align: center;
+    height: auto;
+    /* Use Media Querry to perfectly align all images */
+    width: 100%;
+    height: auto;
+    /* position: fixed;                  Don't Use Position as Fixed in Footer. As it is last, it automatically sets itself as the page develops */
+}
+
+
+.custom-icons{
+    display: inline-block;
+    font-size: 48px;
+    color: darkblue;
+    padding-top: 5px;
+}
+
+
+
+
+            /*DAY 11*/
+
+
+
+
+@media screen and (max-width:600px){            /*THIS MEANS UPTO 600PX FROM ZERO, THE FOLLOWING VALUES TAKES PLACE*/
+    .header{
+        flex-direction: column;
+    }
+
+
+    .banner{
+        width: 100%;
+    }
+
+
+    .menubar{
+        width: 100%;
+        /* visibility: hidden;                     NOT DISPLAY=HIDDEN, DISPLAY ON HOW TO SHOW, VISIBILITY ON WHETHER TO HIDE OR NOT BUT ONLY CONTENTS ARE HIDDEN AND NOT THE DIV ITSELF */
+        display: none;                              /*DO THIS TO REMOVE EVERYTHING FROM CONTENT TO DIVS*/
+    }
+
+
+     .body-content{
+        flex-direction: column;
+        background-color: white;
+    }
+
+
+    .sidebar{
+        width: 100%;
+        display: none;
+    }
+
+
+    .main-content{
+        margin-top: 5px;
+        width: 100%;
+    }
+
+
+    .sidebar2{
+        display: block;
+    }
+
+
+    .sidebar2 select{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        font-size: 24px;
+        color: aquamarine;
+        background-color: steelblue;
+    }
+}            
